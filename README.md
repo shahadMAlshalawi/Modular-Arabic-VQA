@@ -163,7 +163,7 @@ print("Fuzz Accuracy Results:", fuzzy_results)
 If you use Modular Arabic VQA in your research, please cite the repository:
 ```
 @misc{Modular Arabic VQA,
-  author = {Shahad Alshalawi},
+  author = {Shahad Mutlaq Alshalawi},
   title = {Modular Arabic Visual Question Answering System},
   year = {2025},
   publisher = {GitHub},
