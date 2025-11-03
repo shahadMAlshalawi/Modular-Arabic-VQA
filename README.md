@@ -37,6 +37,10 @@ This framework integrates multiple Arabic and multilingual pretrained models for
 -  🔬 **Flexible Experimentation:** Supports multiple captioning models (AraBERT32-Flickr8k(abbreviated as BiT throughout this repository) , Violet, GPT-4o), similarity-based caption-selection strategies, and diverse evaluation metrics ([BLEU](https://huggingface.co/spaces/evaluate-metric/bleu), [BERTScore](https://arxiv.org/abs/1904.09675), [Fuzz Accuracy](https://github.com/mbzuai-oryx/Camel-Bench/blob/main/scripts/fuzz_eval.py)).
 -  📈 **Research-Ready Pipeline:** Facilitates ablation studies, benchmarking, and reproducible evaluations of modular VQA configurations..
 
+> **Note:** All experiments were performed on the validation splits of the following Arabic datasets:
+> [![HF Dataset](https://img.shields.io/badge/🤗-VQAv2--ar-yellow)](https://huggingface.co/datasets/ShahadMAlshalawi/vqav2-ar) 
+> &nbsp; | &nbsp; 
+> [![HF Dataset](https://img.shields.io/badge/🤗-OKVQA--ar-orange)](https://huggingface.co/datasets/ShahadMAlshalawi/okvqa-ar)
 
 
 ## Installation
@@ -80,9 +84,9 @@ from aravqa.core.config import Config
 from datasets import load_dataset
 from aravqa.datasets.utils import prepare_dataset, compute_similarity_captions, compute_bleu_score
 from aravqa.datasets import OKVQADataset, OKVQADataLoader
-from aravqa.modules.captioning import BiTCaptioner, VioletCaptioner
+from aravqa.modules.captioning import BiTCaptioner, VioletCaptioner, GPT4oCaptioner
 from aravqa.modules.question_answering import GeminiAnswerer
-from aravqa.modules.evaluation import BLEUEvaluator, AccuracyEvaluator
+from aravqa.modules.evaluation import BLEUEvaluator, BERTScoreEvaluator, AccuracyEvaluator
 import pandas as pd
 import textwrap
 
