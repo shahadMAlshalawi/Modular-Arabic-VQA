@@ -38,9 +38,14 @@ This framework integrates multiple Arabic and multilingual pretrained models for
 -  📈 **Research-Ready Pipeline:** Facilitates ablation studies, benchmarking, and reproducible evaluations of modular VQA configurations..
 
 > **Note:** All experiments were performed on the validation splits of the following Arabic datasets:
-> [![HF Dataset](https://img.shields.io/badge/🤗-VQAv2--ar-yellow)](https://huggingface.co/datasets/ShahadMAlshalawi/vqav2-ar) 
-> &nbsp; | &nbsp; 
-> [![HF Dataset](https://img.shields.io/badge/🤗-OKVQA--ar-orange)](https://huggingface.co/datasets/ShahadMAlshalawi/okvqa-ar)
+
+<p align="center">
+  
+[![HF Dataset](https://img.shields.io/badge/🤗-VQAv2--ar-yellow)](https://huggingface.co/datasets/ShahadMAlshalawi/vqav2-ar)
+&nbsp;&nbsp;
+[![HF Dataset](https://img.shields.io/badge/🤗-OKVQA--ar-orange)](https://huggingface.co/datasets/ShahadMAlshalawi/okvqa-ar)
+
+</p>
 
 
 ## Installation

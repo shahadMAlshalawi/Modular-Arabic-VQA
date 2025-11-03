@@ -63,7 +63,6 @@ class BERTScoreEvaluator(BaseEvaluator):
 
         try:
             result = self.bertscore_scorer.compute(predictions=predictions, references=references, lang=self.lang, model_type=self.model_type)
-            # TODO: Spacify layer: if model_type: str = "bert-base-multilingual-cased" with num_layers=9 if model_type: str = "distilbert-base-multilingual-cased" with num_layers=5
             return result
         except Exception as e:
             print(f"Error computing BERTScore score: {e}")

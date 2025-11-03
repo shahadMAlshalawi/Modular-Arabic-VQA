@@ -4,7 +4,6 @@ from .base import BaseEvaluator
 import evaluate
 import nltk
 from nltk.tokenize import word_tokenize
-# TODO: Remove punctuation
 import string
 
 
@@ -67,7 +66,6 @@ class BLEUEvaluator(BaseEvaluator):
             predictions = [remove_punctuation(pred) for pred in predictions]
             references = [[remove_punctuation(ref) for ref in refs] for refs in references]
             result = self.bleu_scorer.compute(predictions=predictions, references=references, max_order=self.max_order)
-            # TODO: Use Arabic tokenizer result = self.bleu_scorer.compute(predictions=predictions, references=references,tokenizer=..._tokenize, max_order=self.max_order)
             return result
         except Exception as e:
             print(f"Error computing BLEU score: {e}")
