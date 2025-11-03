@@ -34,7 +34,7 @@ This framework integrates multiple Arabic and multilingual pretrained models for
 -  🧩 **Modularity:** Modular framework allowing easy integration or replacement of captioning, language, and many more components.
 -  💡 **Lightweight & Interpretable:** Eliminates multimodal retraining by relying on textual representations, reducing computational cost while maintaining robust reasoning performance.
 -  🌍 **Arabic Support:** Designed to handle Arabic datasets and language processing tasks.
--  🔬 **Flexible Experimentation:** Supports multiple captioning models (AraBERT32-Flickr8k, Violet, GPT-4o), similarity-based caption-selection strategies, and diverse evaluation metrics ([BLEU](https://huggingface.co/spaces/evaluate-metric/bleu), [BERTScore](https://arxiv.org/abs/1904.09675), [Fuzz Accuracy](https://github.com/mbzuai-oryx/Camel-Bench/blob/main/scripts/fuzz_eval.py)).
+-  🔬 **Flexible Experimentation:** Supports multiple captioning models (AraBERT32-Flickr8k(abbreviated as BiT throughout this repository) , Violet, GPT-4o), similarity-based caption-selection strategies, and diverse evaluation metrics ([BLEU](https://huggingface.co/spaces/evaluate-metric/bleu), [BERTScore](https://arxiv.org/abs/1904.09675), [Fuzz Accuracy](https://github.com/mbzuai-oryx/Camel-Bench/blob/main/scripts/fuzz_eval.py)).
 -  📈 **Research-Ready Pipeline:** Facilitates ablation studies, benchmarking, and reproducible evaluations of modular VQA configurations..
 
 
